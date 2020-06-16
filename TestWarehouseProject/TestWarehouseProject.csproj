@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF087FDA-E629-4CA3-947D-31318B591778}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TestWarehouseProject</RootNamespace>
+    <AssemblyName>TestWarehouseProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddForms\AddAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddAreaForm.Designer.cs">
+      <DependentUpon>AddAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddCargo.Designer.cs">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddPicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddPicketForm.Designer.cs">
+      <DependentUpon>AddPicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForms\AddWarehouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForms\AddWarehouseForm.Designer.cs">
+      <DependentUpon>AddWarehouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteAreaForm.Designer.cs">
+      <DependentUpon>DeleteAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteCargoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteCargoForm.Designer.cs">
+      <DependentUpon>DeleteCargoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForms\DeletePicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteForms\DeletePicketForm.Designer.cs">
+      <DependentUpon>DeletePicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteWarehouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteForms\DeleteWarehouseForm.Designer.cs">
+      <DependentUpon>DeleteWarehouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpdateForms\UpdateAreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForms\UpdateAreaForm.Designer.cs">
+      <DependentUpon>UpdateAreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForms\UpdateCargoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForms\UpdateCargoForm.Designer.cs">
+      <DependentUpon>UpdateCargoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForms\UpdatePicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForms\UpdatePicketForm.Designer.cs">
+      <DependentUpon>UpdatePicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateForms\UpdateWarehouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForms\UpdateWarehouseForm.Designer.cs">
+      <DependentUpon>UpdateWarehouseForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddForms\AddAreaForm.resx">
+      <DependentUpon>AddAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddCargo.resx">
+      <DependentUpon>AddCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddPicketForm.resx">
+      <DependentUpon>AddPicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddForms\AddWarehouseForm.resx">
+      <DependentUpon>AddWarehouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForms\DeleteAreaForm.resx">
+      <DependentUpon>DeleteAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForms\DeleteCargoForm.resx">
+      <DependentUpon>DeleteCargoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForms\DeletePicketForm.resx">
+      <DependentUpon>DeletePicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteForms\DeleteWarehouseForm.resx">
+      <DependentUpon>DeleteWarehouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateForms\UpdateAreaForm.resx">
+      <DependentUpon>UpdateAreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForms\UpdateCargoForm.resx">
+      <DependentUpon>UpdateCargoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForms\UpdatePicketForm.resx">
+      <DependentUpon>UpdatePicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForms\UpdateWarehouseForm.resx">
+      <DependentUpon>UpdateWarehouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
